@@ -1,3 +1,4 @@
+export PATH="~/bin:$PATH"
 for i in *.jpg
 do
   bn=$(basename ${i%.*})
