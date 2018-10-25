@@ -24,8 +24,11 @@ do
     #TODO
     src_prf_file="sRGB_Color_Space_Profile.ICM"
   fi
+  #autolevel
   autolevel -c average $i ${bn}_${ext}_tmp.jpg
+  #black and white point correction for sp2
   convert ${bn}_${ext}_tmp.jpg +level %5,%95 -quality 100 ${bn}_${ext}.jpg
+  #convertion to sp2 colour profile
   convert ${bn}_${ext}.jpg -profile $src_prf_file -profile $dst_prf -quality 100 ${bn}_${ext}_sp2iccprf.jpg
   #rm ${bn}_${ext}_tmp.jpg
 done
