@@ -7,8 +7,21 @@ ext="sp2"
 #src_prf="sRGB"
 dst_prf="SP2_Instax_Color_Ver_1-00.icc"
 
-list=`ls *.jpg`
-#list=`ls *.jpg | grep -v sp2`
+if [ $# -eq 0 ]
+  then
+    echo "no arguments supplied, using list of jpeg files in current directory."
+    list=`ls *.jpg`
+    #list=`ls *.jpg | grep -v sp2`
+  else
+    echo "making list from supplied files."
+    for var in "$@"
+      do
+        echo "$var"
+        list="$list $var"
+        echo $list
+      done
+fi
+
 
 for i in $list
 do
