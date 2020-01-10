@@ -10,7 +10,7 @@
    darktable:xmp_version="2"
    darktable:raw_params="0"
    darktable:auto_presets_applied="1"
-   darktable:history_end="2">
+   darktable:history_end="3">
    <darktable:mask_id>
     <rdf:Seq/>
    </darktable:mask_id>
@@ -35,6 +35,15 @@
    <darktable:history>
     <rdf:Seq>
      <rdf:li
+      darktable:operation="tonecurve"
+      darktable:enabled="1"
+      darktable:modversion="4"
+      darktable:params="gz04eJxjYIAAjy5T60e6p62AtA2Qtp5ofcZm3uQUGyDfFsi34bzSa3tjt5wtUNwWKG57/y+X3bPQ5bZAeTub/29sWQ6n2k38q2YHVGd3/0ae3Y45q+2clebbAdXbOS84ZTdlw3u7/Gc/7YD67FOqxOy7+uTtlz81tAfqt2cw9beX+ehjLzot0x5ojv0yw3p7BoYGKIYBdP5gA4PTfSJAzIQFMyOpAQB16EPT"
+      darktable:multi_name=" "
+      darktable:multi_priority="0"
+      darktable:blendop_version="8"
+      darktable:blendop_params="gz11eJxjYGBgkGAAgRNODGiAEV0AJ2iwh+CRxQcA5qIZBA=="/>
+     <rdf:li
       darktable:operation="colorchecker"
       darktable:enabled="1"
       darktable:modversion="2"
@@ -47,7 +56,7 @@
       darktable:operation="colorzones"
       darktable:enabled="1"
       darktable:modversion="3"
-      darktable:params="gz03eJxjYoAAVU8hO1XPSXbbc28DaSH7vNtm9ttzo+0ZGBrsqSCPF3f+/2+XA8SCTf/sMlZst8v/o7fb/dIeu6Xb/tmB5AjpB9kPAHncMpA="
+      darktable:params="gz03eJxjYoAAVU8hO1XPSXbbc28DaSH7vNtm9ttzo+0ZGBrsqSCPF6f8/2/XD8RBB//ZVZ7ba6cxv393tcg2uylF/+xAcoT0g+wHAGdYMf4="
       darktable:multi_name=""
       darktable:multi_priority="0"
       darktable:blendop_version="8"
