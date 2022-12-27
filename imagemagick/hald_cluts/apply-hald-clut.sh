@@ -13,13 +13,15 @@ LUTS="dehancer-fuji-astia-100f.png dehancer-fuji-astia-100.png dehancer-fuji-c20
 #LUTS=vsco-kodachrome25.png
 LUTS=vsco-fuji-velvia-50.png
 LUTS=vsco-fuji-provia-400x.png
+LUTS="fujichrome-astia-100f-daylight-exp-2005.png fujichrome-sensia-400-exp-2011.png"
 
 CONVERT=/usr/bin/convert
 FL="${1%.*}"
-FLLUT="${LUT%.*}"
 
 for LUT in $LUTS
 do
-  $CONVERT $1 ${LPATH}/${LUT} -hald-clut ${FL}-${FLLUT}.jpg
+  FLLUT="${LUT%.*}"
+  $CONVERT $1 ${LUT} -hald-clut ${FL}-${FLLUT}.jpg
 done
+
 
